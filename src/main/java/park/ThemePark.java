@@ -1,11 +1,14 @@
 package park;
 
-import attractions.Attraction;
+import attractions.*;
+import behaviours.IReviewed;
+import people.Visitor;
 import stalls.Stall;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
-public class ThemePark {
+public class ThemePark{
 
     private ArrayList<Attraction> attractions;
     private ArrayList<Stall> stalls;
@@ -33,5 +36,14 @@ public class ThemePark {
         attractions.remove(attraction);
     }    public void removeStall(Stall stall) {
         stalls.remove(stall);
+    }
+
+    public ArrayList<IReviewed> getAllReviewed() {
+        return null;
+    }
+
+    public void visit(Visitor visitor, Attraction attraction) {
+        attraction.addVisitor();
+        visitor.addAttractionToVisited(attraction);
     }
 }
