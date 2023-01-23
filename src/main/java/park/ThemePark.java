@@ -6,7 +6,6 @@ import people.Visitor;
 import stalls.Stall;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class ThemePark{
 
@@ -34,7 +33,8 @@ public class ThemePark{
 
     public void removeAttraction(Attraction attraction) {
         attractions.remove(attraction);
-    }    public void removeStall(Stall stall) {
+    }
+    public void removeStall(Stall stall) {
         stalls.remove(stall);
     }
 
